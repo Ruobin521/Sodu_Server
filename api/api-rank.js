@@ -34,7 +34,7 @@ async function getRank (index) {
   try {
     var res = await axios({
       method: 'get',
-      url: uri
+      url: uri + '?jdfwkey=4u1sk3'
     })
     var books = getRankBooks(res.data)
     let result = resultCode.createResult(resultCode.success, books)
